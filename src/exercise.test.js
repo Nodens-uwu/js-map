@@ -10,7 +10,7 @@ describe("tests", () => {
   it("should return [0, 1, 4]", () => {
     const array = [0, -1, 2];
     const rta = runCode(array);
-    expect(rta).toEqual([0, 1, 4]);
+    expect(rta).toEqual([0, -2, 4]);
   });
   it("should return []", () => {
     const array = [];

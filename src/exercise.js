@@ -1,3 +1,3 @@
 export function runCode(array) {
-  // Tu código aquí 👈
+  return array.map(item => item * 2)
 }
