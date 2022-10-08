@@ -1,17 +1,21 @@
 import { runCode } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = runCode(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
+  it("should return [2,4,6]", () => {
+    const array = [1, 2, 3];
+    const rta = runCode(array);
+    expect(rta).toEqual([2, 4, 6]);
   });
 
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = runCode(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
+  it("should return [0, 1, 4]", () => {
+    const array = [0, -1, 2];
+    const rta = runCode(array);
+    expect(rta).toEqual([0, 1, 4]);
   });
+  it("should return []", () => {
+    const array = [];
+    const rta = runCode(array);
+    expect(rta).toEqual([]);
+  });
+  
 });
